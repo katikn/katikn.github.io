@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div>
         <button id="minushp">-</button>
-        <input id="hp" type="text"> 
+        <input id="hp" type="text">
         <button id="plushp">+</button>
     </div>
     <div>
@@ -21,6 +23,47 @@
     <p>Количество очков:</p>
     <h2 id="points">30</h2>
 </body>
-</html>
-<script src="https://katikn.github.io/script.js"></script>
 
+</html>
+<script>
+    let points = 30;
+    let chars = [0, 0, 0, 0];
+    $('#hp').val(chars[0])
+    $('#strength').val(chars[1])
+
+    $("#plushp").click(function () {
+        if (points != 0) {
+            chars[0] += 1
+            points -= 1
+        }
+        $('#hp').val(chars[0])
+        $('#points').html(points)
+    })
+
+    $("#minushp").click(function () {
+        if (chars[0] > 0) {
+            chars[0] -= 1
+            points += 1
+        }
+        $('#hp').val(chars[0])
+        $('#points').html(points)
+    })
+
+    $("#plusstrength").click(function () {
+        if (points != 0) {
+            chars[1] += 1
+            points -= 1
+        }
+        $('#strength').val(chars[1])
+        $('#points').html(points)
+    })
+
+    $("#minusstrength").click(function () {
+        if (chars[1] > 0) {
+            chars[1] -= 1
+            points += 1
+        }
+        $('#strength').val(chars[1])
+        $('#points').html(points)
+    })
+</script>

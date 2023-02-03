@@ -18,7 +18,7 @@ $("#plushp").click(function () {
     }
     $('#hp').val(chars[0])
     $('#points').html(points)
-})
+}) 
 
 $("#minushp").click(function () {
     if (chars[0] > 0){

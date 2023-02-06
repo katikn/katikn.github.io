@@ -1,69 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <button id="minushp">-</button>
-        <input id="hp" type="text">
-        <button id="plushp">+</button>
+    <div class="row">
+        <div class="col s12 indigo lighten-2">
+            <h3 style="text-align: center; ">Тест по роману "Отцы и дети"</h3>
+        </div>
     </div>
-    <div>
-        <button id="minusstrength">-</button>
-        <input id="strength" type="text">
-        <button id="plusstrength">+</button>
+    <div id="start" style="width: 800px; position: relative; margin: 0 auto;">
+        <a style="text-align: center; margin: auto 45%;" id="starttest"
+            class="waves-effect waves-light indigo lighten-2 btn">Начать!</a>
     </div>
-    <p>Количество очков:</p>
-    <h2 id="points">30</h2>
+    <div id="firstquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">1. В каком году роман «Отцы и дети» был впервые опубликован?</h5>
+        <label>
+            <input type="radio" name='firstquestion' id="firstquest1" value="1">
+            <span>1857 г.</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='firstquestion' id="firstquest2" value="2">
+            <span>1860 г.</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='firstquestion' id="firstquest3" value="3">
+            <span>1862 г.</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='firstquestion' id="firstquest4" value="4">
+            <span>1870 г.</span>
+        </label> <br>
+        <a id="submit1" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer1"></h6>
+        <a id="goto2quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="secondquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">2. К какому сословию принадлежит Евгений Базаров?</h5>
+        <label>
+            <input type="radio" name='secondquestion' id="secondquest1" value="1">
+            <span>Потомственные дворяне</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='secondquestion' id="secondquest2" value="2">
+            <span>Разночинцы</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='secondquestion' id="secondquest3" value="3">
+            <span>Крестьяне</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='secondquestion' id="secondquest4" value="4">
+            <span>Духовенство</span>
+        </label> <br>
+        <a id="submit2" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer2"></h6>
+        <a id="goto3quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="thirdquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">3. К какому сословию принадлежит Евгений Базаров?</h5>
+        <label>
+            <input type="radio" name='thirdquestion' id="thirdquest1" value="1">
+            <span>Потомственные дворяне</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='thirdquestion' id="thirdquest2" value="2">
+            <span>Разночинцы</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='thirdquestion' id="thirdquest3" value="3">
+            <span>Крестьяне</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='thirdquestion' id="thirdquest4" value="4">
+            <span>Духовенство</span>
+        </label> <br>
+        <a id="submit2" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer2"></h6>
+        <a id="goto4quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="score" style="width: 800px; position: relative; margin: 0 auto;">
+        <h6>Ваш счёт: </h6>
+        <h5 id="points">0</h5>
+    </div>
+
+
 </body>
 
 </html>
 <script>
-    let points = 30;
-    let chars = [0, 0, 0, 0];
-    $('#hp').val(chars[0])
-    $('#strength').val(chars[1])
+    let points = 0;
+    $("document").ready(function () {
+        $("#firstquestiondiv").hide();
+        $('#secondquestiondiv').hide()
+        $('#thirdquestiondiv').hide()
+        $('#goto2quest').hide()
+        $('#goto3quest').hide()
+        $('#goto4quest').hide()
+        $('#score').hide()
+    });
 
-    $("#plushp").click(function () {
-        if (points != 0) {
-            chars[0] += 1
-            points -= 1
-        }
-        $('#hp').val(chars[0])
-        $('#points').html(points)
+    $('#starttest').click(function () {
+        $('#start').hide()
+        $('#score').show()
+        $('#firstquestiondiv').show()
     })
 
-    $("#minushp").click(function () {
-        if (chars[0] > 0) {
-            chars[0] -= 1
-            points += 1
-        }
-        $('#hp').val(chars[0])
-        $('#points').html(points)
+    $('#goto2quest').click(function () {
+        $('#firstquestiondiv').hide()
+        $('#secondquestiondiv').show()
     })
 
-    $("#plusstrength").click(function () {
-        if (points != 0) {
-            chars[1] += 1
-            points -= 1
-        }
-        $('#strength').val(chars[1])
-        $('#points').html(points)
+    $('#goto3quest').click(function () {
+        $('#secondquestiondiv').hide()
+        $('#thirdquestiondiv').show()
     })
 
-    $("#minusstrength").click(function () {
-        if (chars[1] > 0) {
-            chars[1] -= 1
-            points += 1
+    $('#submit1').click(function () {
+        $('#submit1').hide()
+        let a1 = $("input[name=firstquestion]:checked").val()
+        if (a1 == 3) {
+            points += 1;
+            $('#answer1').html('Это правильный ответ!')
+            $('#points').html(points)
+        } else {
+            $('#answer1').html('Это был неправильный ответ :(')
         }
-        $('#strength').val(chars[1])
-        $('#points').html(points)
+        $('#goto2quest').show()
+    })
+
+    $('#submit2').click(function () {
+        $('#submit2').hide()
+        let a2 = $("input[name=secondquestion]:checked").val()
+        if (a2 == 2) {
+            points += 1;
+            $('#answer2').html('Это правильный ответ!')
+            $('#points').html(points)
+        } else {
+            $('#answer2').html('Это был неправильный ответ :(')
+        }
+        $('#goto3quest').show()
     })
 </script>

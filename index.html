@@ -11,7 +11,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Document</title>
+    <title>Тест по литературе</title>
 </head>
 
 <body>
@@ -22,17 +22,18 @@
     </div>
     <div id="start" style="width: 800px; position: relative; margin: 0 auto;">
         <a style="text-align: center; margin: auto 45%;" id="starttest"
-            class="waves-effect waves-light indigo lighten-2 btn">Начать!</a>
+            class="waves-effect waves-light indigo lighten-2 btn">Начать!</a> <br> <br>
+        <img width="500px" height="400px" style="display: block; margin: 0 auto;" src="https://vtt.gov67.ru/files/304/gallery/detail/snimok-rrrekrana-2021-06_1622790873.jpg" alt="">
     </div>
     <div id="firstquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
         <h5 style="text-align: center;">1. В каком году роман «Отцы и дети» был впервые опубликован?</h5>
         <label>
             <input type="radio" name='firstquestion' id="firstquest1" value="1">
-            <span>1857 г.</span>
+            <span>1860 г.</span>
         </label> <br>
         <label>
             <input type="radio" name='firstquestion' id="firstquest2" value="2">
-            <span>1860 г.</span>
+            <span>1861 г.</span>
         </label> <br>
         <label>
             <input type="radio" name='firstquestion' id="firstquest3" value="3">
@@ -40,7 +41,7 @@
         </label> <br>
         <label>
             <input type="radio" name='firstquestion' id="firstquest4" value="4">
-            <span>1870 г.</span>
+            <span>1863 г.</span>
         </label> <br>
         <a id="submit1" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
         <h6 id="answer1"></h6>
@@ -69,87 +70,425 @@
         <a id="goto3quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
     </div>
     <div id="thirdquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
-        <h5 style="text-align: center;">3. К какому сословию принадлежит Евгений Базаров?</h5>
+        <h5 style="text-align: center;">3. Какой герой романа является по сути выразителем точки зрения автора?</h5>
         <label>
             <input type="radio" name='thirdquestion' id="thirdquest1" value="1">
-            <span>Потомственные дворяне</span>
+            <span>Евгений Базаров</span>
         </label> <br>
         <label>
             <input type="radio" name='thirdquestion' id="thirdquest2" value="2">
-            <span>Разночинцы</span>
+            <span>Николай Петрович Кирсанов</span>
         </label> <br>
         <label>
             <input type="radio" name='thirdquestion' id="thirdquest3" value="3">
-            <span>Крестьяне</span>
+            <span>Анна Сергеевна Одинцова</span>
         </label> <br>
         <label>
             <input type="radio" name='thirdquestion' id="thirdquest4" value="4">
-            <span>Духовенство</span>
+            <span>Павел Петрович Кирсанов</span>
         </label> <br>
-        <a id="submit2" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
-        <h6 id="answer2"></h6>
+        <a id="submit3" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer3"></h6>
         <a id="goto4quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
     </div>
-    <div id="score" style="width: 800px; position: relative; margin: 0 auto;">
-        <h6>Ваш счёт: </h6>
-        <h5 id="points">0</h5>
+    <div id="fourthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">4. Определите героя по портрету.</h5>
+        <p>Она поразила его достоинством своей осанки. Обнаженные ее руки красиво лежали вдоль стройного стана, красиво падали с
+        блестящих волос на покатые плечи легкие ветки фуксий; спокойно и умно, именно спокойно, а не задумчиво, глядели светлые
+        глаза из-под немного нависшего белого лба, и губы улыбались едва заметною улыбкою. Какой-то ласковой и мягкой силой
+        веяло от ее лица.</p>
+        <label>
+            <input type="radio" name='fourthquestion' id="fourthquest1" value="1">
+            <span>Фенечка</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fourthquestion' id="fourthquest2" value="2">
+            <span>Евдоксия Кукшина</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fourthquestion' id="fourthquest3" value="3">
+            <span>Катя Лаптева</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fourthquestion' id="fourthquest4" value="4">
+            <span>Анна Сергеевна Одинцова</span>
+        </label> <br>
+        <a id="submit4" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer4"></h6>
+        <a id="goto5quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
     </div>
-
+    <div id="fifthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">5. Как Базаров относится к простому русскому народу?</h5>
+        <label>
+            <input type="radio" name='fifthquestion' id="fifthquest1" value="1">
+            <span>Он восхищается им; считает, что перемены будут вредны для народа</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fifthquestion' id="fifthquest2" value="2">
+            <span>Он считает его необразованным и темным</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fifthquestion' id="fifthquest3" value="3">
+            <span>Он считает, что нужно искусственно обогатить народ, отдав ему дворянские поместья</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='fifthquestion' id="fifthquest4" value="4">
+            <span>Он считает, что в нем скрыта истинная сила русского общества</span>
+        </label> <br>
+        <a id="submit5" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer5"></h6>
+        <a id="goto6quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="sixthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">6. Какому критику принадлежит следующее высказывание о Базарове?</h5>
+        <p>«Умереть так, как умер Базаров, — все равно что сделать великий подвиг»</p>
+        <label>
+            <input type="radio" name='sixthquestion' id="sixthquest1" value="1">
+            <span>Д. И. Писареву</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='sixthquestion' id="sixthquest2" value="2">
+            <span>Н. Г. Чернышевскому</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='sixthquestion' id="sixthquest3" value="3">
+            <span>В. Г. Белинскому</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='sixthquestion' id="sixthquest4" value="4">
+            <span>М. А. Антоновичу</span>
+        </label> <br>
+        <a id="submit6" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer6"></h6>
+        <a id="goto7quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="seventhquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">7. По признанию Ситникова, Евдоксия Кукшина – «настоящая эмансипе». Что это означает?</h5>
+        <label>
+            <input type="radio" name='seventhquestion' id="seventhquest1" value="1">
+            <span>Она работает в университете и имеет независимый заработок</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='seventhquestion' id="seventhquest2" value="2">
+            <span>Считает мужчин низшими по отношению к женщинам</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='seventhquestion' id="seventhquest3" value="3">
+            <span>Кукшина – революционерка-народоволец</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='seventhquestion' id="seventhquest4" value="4">
+            <span>Будучи женщиной, перенимает стиль поведения и «типично мужские» интересы</span>
+        </label> <br>
+        <a id="submit7" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer7"></h6>
+        <a id="goto8quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="eigthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">8. В основе романа лежит конфликт:</h5>
+        <label>
+            <input type="radio" name='eigthquestion' id="eigthquest1" value="1">
+            <span>Отца и сына Кирсановых (конфликт поколений)</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='eigthquestion' id="eigthquest2" value="2">
+            <span>Помещиков и крепостных крестьян (социальный конфликт)</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='eigthquestion' id="eigthquest3" value="3">
+            <span>Разночинцев-демократов и либеральных дворян (идейный конфликт)</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='eigthquestion' id="eigthquest4" value="4">
+            <span>Базарова и Одинцовой (любовный конфликт)</span>
+        </label> <br>
+        <a id="submit8" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer8"></h6>
+        <a id="goto9quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="ninthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">9. Из-за чего дерутся на дуэли Павел Петрович и Базаров?</h5>
+        <label>
+            <input type="radio" name='ninthquestion' id="ninthquest1" value="1">
+            <span>Базаров оскорбляет память княгини Р.</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='ninthquestion' id="ninthquest2" value="2">
+            <span>Базаров оскорбляет русских аристократов</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='ninthquestion' id="ninthquest3" value="3">
+            <span>Из-за несходства политических убеждений</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='ninthquestion' id="ninthquest4" value="4">
+            <span>Базаров неподобающе ведет себя с Фенечкой</span>
+        </label> <br>
+        <a id="submit9" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer9"></h6>
+        <a id="goto10quest" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="tenthquestiondiv" style="width: 800px; position: relative; margin: 0 auto;">
+        <h5 style="text-align: center;">10. Какое слово в лексиконе Е. Базарова относится к ругательным?</h5>
+        <label>
+            <input type="radio" name='tenthquestion' id="tenthquest1" value="1">
+            <span>Романтизм</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='tenthquestion' id="tenthquest2" value="2">
+            <span>«Принсипы»</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='tenthquestion' id="tenthquest3" value="3">
+            <span>Либерализм</span>
+        </label> <br>
+        <label>
+            <input type="radio" name='tenthquestion' id="tenthquest4" value="4">
+            <span>Прогресс</span>
+        </label> <br>
+        <a id="submit10" class="waves-effect waves-light indigo lighten-2 btn">Ответить</a>
+        <h6 id="answer10"></h6>
+        <a id="gotofinish" class="waves-effect waves-light indigo lighten-2 btn">Перейти к следующему вопросу</a>
+    </div>
+    <div id="score" style="width: 800px; position: relative; margin: 0 auto;">
+        <span style="font-size: 18px;">Ваш счёт: </span>
+        <span style="font-size: 24px;" id="points">0</span>
+    </div>
+    <div id="finish" style="width: 800px; position: relative; margin: 0 auto;">
+        <span style="font-size: 18px;">Ваша оценка: </span>
+        <span style="font-size: 24px;" id="itog"></span>
+        <h6 id="itog2"></h6>
+        <img width="600px" height="400px" style="display: block; margin: 0 auto;" src="https://cf2.ppt-online.org/files2/slide/9/9axyt4KORqdzbUp7v0WI28F1nMuwiSD5eTEYNrlXBL/slide-34.jpg" alt="">
+    </div>
 
 </body>
 
 </html>
 <script>
     let points = 0;
-    $("document").ready(function () {
-        $("#firstquestiondiv").hide();
-        $('#secondquestiondiv').hide()
-        $('#thirdquestiondiv').hide()
-        $('#goto2quest').hide()
-        $('#goto3quest').hide()
-        $('#goto4quest').hide()
-        $('#score').hide()
-    });
+        $("document").ready(function () {
+            $("#firstquestiondiv").hide();
+            $('#secondquestiondiv').hide()
+            $('#thirdquestiondiv').hide()
+            $('#fourthquestiondiv').hide()
+            $('#fifthquestiondiv').hide()
+            $('#sixthquestiondiv').hide()
+            $('#seventhquestiondiv').hide()
+            $('#eigthquestiondiv').hide()
+            $('#ninthquestiondiv').hide()
+            $('#tenthquestiondiv').hide()
+            $('#goto2quest').hide()
+            $('#goto3quest').hide()
+            $('#goto4quest').hide()
+            $('#goto5quest').hide()
+            $('#goto6quest').hide()
+            $('#goto7quest').hide()
+            $('#goto8quest').hide()
+            $('#goto9quest').hide()
+            $('#goto10quest').hide()
+            $('#gotofinish').hide()
+            $('#score').hide()
+            $('#finish').hide()
+        });
 
-    $('#starttest').click(function () {
-        $('#start').hide()
-        $('#score').show()
-        $('#firstquestiondiv').show()
-    })
+        $('#starttest').click(function () {
+            $('#start').hide()
+            $('#score').show()
+            $('#firstquestiondiv').show()
+        })
 
-    $('#goto2quest').click(function () {
-        $('#firstquestiondiv').hide()
-        $('#secondquestiondiv').show()
-    })
+        $('#goto2quest').click(function () {
+            $('#firstquestiondiv').hide()
+            $('#secondquestiondiv').show()
+        })
 
-    $('#goto3quest').click(function () {
-        $('#secondquestiondiv').hide()
-        $('#thirdquestiondiv').show()
-    })
+        $('#goto3quest').click(function () {
+            $('#secondquestiondiv').hide()
+            $('#thirdquestiondiv').show()
+        })
 
-    $('#submit1').click(function () {
-        $('#submit1').hide()
-        let a1 = $("input[name=firstquestion]:checked").val()
-        if (a1 == 3) {
-            points += 1;
-            $('#answer1').html('Это правильный ответ!')
-            $('#points').html(points)
-        } else {
-            $('#answer1').html('Это был неправильный ответ :(')
-        }
-        $('#goto2quest').show()
-    })
+        $('#goto4quest').click(function () {
+            $('#thirdquestiondiv').hide()
+            $('#fourthquestiondiv').show()
+        })
 
-    $('#submit2').click(function () {
-        $('#submit2').hide()
-        let a2 = $("input[name=secondquestion]:checked").val()
-        if (a2 == 2) {
-            points += 1;
-            $('#answer2').html('Это правильный ответ!')
-            $('#points').html(points)
-        } else {
-            $('#answer2').html('Это был неправильный ответ :(')
-        }
-        $('#goto3quest').show()
-    })
+        $('#goto5quest').click(function () {
+            $('#fourthquestiondiv').hide()
+            $('#fifthquestiondiv').show()
+        })
+
+        $('#goto6quest').click(function () {
+            $('#fifthquestiondiv').hide()
+            $('#sixthquestiondiv').show()
+        })
+
+        $('#goto7quest').click(function () {
+            $('#sixthquestiondiv').hide()
+            $('#seventhquestiondiv').show()
+        })
+
+        $('#goto8quest').click(function () {
+            $('#seventhquestiondiv').hide()
+            $('#eigthquestiondiv').show()
+        })
+
+        $('#goto9quest').click(function () {
+            $('#eigthquestiondiv').hide()
+            $('#ninthquestiondiv').show()
+        })
+
+        $('#goto10quest').click(function () {
+            $('#ninthquestiondiv').hide()
+            $('#tenthquestiondiv').show()
+        })
+
+        $('#gotofinish').click(function () {
+            $('#tenthquestiondiv').hide()
+            $('#finish').show()
+            if (points >= 9) {
+                $('#itog').html("5")
+                $('#itog2').html("Вы молодец! Так держать!")
+            } else if (points >= 6 && points <= 8) {
+                $('#itog').html("4")
+                $('#itog2').html("Хороший результат, но можно и лучше! ;)")
+            } else if (points >= 3 && points <= 5) {
+                $('#itog').html("3")
+                $('#itog2').html("Нужно больше стараться. (Тест можно перепройти заново, просто обновите страницу)")
+            } else if (points >= 0 && points <= 2) {
+                $('#itog').html("2")
+                $('#itog2').html("В следующий раз повезёт! (Тест можно перепройти заново, просто обновите страницу)")
+            }
+        })
+
+
+
+        $('#submit1').click(function () {
+            $('#submit1').hide()
+            let a = $("input[name=firstquestion]:checked").val()
+            if (a == 3) {
+                points += 1;
+                $('#answer1').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer1').html('Это был неправильный ответ :(')
+            }
+            $('#goto2quest').show()
+        })
+
+        $('#submit2').click(function () {
+            $('#submit2').hide()
+            let a = $("input[name=secondquestion]:checked").val()
+            if (a == 2) {
+                points += 1;
+                $('#answer2').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer2').html('Это был неправильный ответ :(')
+            }
+            $('#goto3quest').show()
+        })
+
+        $('#submit3').click(function () {
+            $('#submit3').hide()
+            let a = $("input[name=thirdquestion]:checked").val()
+            if (a == 1) {
+                points += 1;
+                $('#answer3').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer3').html('Это был неправильный ответ :(')
+            }
+            $('#goto4quest').show()
+        })
+
+        $('#submit4').click(function () {
+            $('#submit4').hide()
+            let a = $("input[name=fourthquestion]:checked").val()
+            if (a == 4) {
+                points += 1;
+                $('#answer4').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer4').html('Это был неправильный ответ :(')
+            }
+            $('#goto5quest').show()
+        })
+
+        $('#submit5').click(function () {
+            $('#submit5').hide()
+            let a = $("input[name=fifthquestion]:checked").val()
+            if (a == 2) {
+                points += 1;
+                $('#answer5').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer5').html('Это был неправильный ответ :(')
+            }
+            $('#goto6quest').show()
+        })
+
+        $('#submit6').click(function () {
+            $('#submit6').hide()
+            let a = $("input[name=sixthquestion]:checked").val()
+            if (a == 1) {
+                points += 1;
+                $('#answer6').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer6').html('Это был неправильный ответ :(')
+            }
+            $('#goto7quest').show()
+        })
+
+        $('#submit7').click(function () {
+            $('#submit7').hide()
+            let a = $("input[name=seventhquestion]:checked").val()
+            if (a == 4) {
+                points += 1;
+                $('#answer7').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer7').html('Это был неправильный ответ :(')
+            }
+            $('#goto8quest').show()
+        })
+
+        $('#submit8').click(function () {
+            $('#submit8').hide()
+            let a = $("input[name=eigthquestion]:checked").val()
+            if (a == 3) {
+                points += 1;
+                $('#answer8').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer8').html('Это был неправильный ответ :(')
+            }
+            $('#goto9quest').show()
+        })
+
+        $('#submit9').click(function () {
+            $('#submit9').hide()
+            let a = $("input[name=ninthquestion]:checked").val()
+            if (a == 4) {
+                points += 1;
+                $('#answer9').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer9').html('Это был неправильный ответ :(')
+            }
+            $('#goto10quest').show()
+        })
+
+        $('#submit10').click(function () {
+            $('#submit10').hide()
+            let a = $("input[name=tenthquestion]:checked").val()
+            if (a == 1) {
+                points += 1;
+                $('#answer9').html('Это правильный ответ!')
+                $('#points').html(points)
+            } else {
+                $('#answer9').html('Это был неправильный ответ :(')
+            }
+            $('#gotofinish').show()
+        })
 </script>

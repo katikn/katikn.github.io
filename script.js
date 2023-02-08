@@ -258,10 +258,10 @@ $('#submit10').click(function(){
     let a = $("input[name=tenthquestion]:checked").val()
     if (a == 1) {
         points += 1;
-        $('#answer9').html('Это правильный ответ!')
+        $('#answer10').html('Это правильный ответ!')
         $('#points').html(points)
     } else {
-        $('#answer9').html('Это был неправильный ответ :(')
+        $('#answer10').html('Это был неправильный ответ :(')
     }
     $('#gotofinish').show()
 })
